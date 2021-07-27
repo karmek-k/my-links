@@ -1,0 +1,9 @@
+{
+  "name": "my-links-be",
+  "version": "0.0.0",
+  "description": "Backend for My Links",
+  "main": "dist/index.js",
+  "repository": "https://github.com/karmek-k/my-links-be.git",
+  "author": "Bartosz Gleń <33288445+karmek-k@users.noreply.github.com>",
+  "license": "MIT"
+}
