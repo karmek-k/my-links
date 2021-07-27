@@ -5,5 +5,27 @@
   "main": "dist/index.js",
   "repository": "https://github.com/karmek-k/my-links-be.git",
   "author": "Bartosz Gleń <33288445+karmek-k@users.noreply.github.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.3",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^16.4.3",
+    "@types/passport": "^1.0.7",
+    "nodemon": "^2.0.12",
+    "prettier": "^2.3.2",
+    "typescript": "^4.3.5"
+  },
+  "scripts": {
+    "compile:dev": "tsc -w",
+    "compile": "tsc",
+    "start:dev": "nodemon .",
+    "start": "tsc && node ."
+  }
 }
