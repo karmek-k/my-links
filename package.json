@@ -21,5 +21,11 @@
     "nodemon": "^2.0.12",
     "prettier": "^2.3.2",
     "typescript": "^4.3.5"
+  },
+  "scripts": {
+    "compile:dev": "tsc -w",
+    "compile": "tsc",
+    "start:dev": "nodemon .",
+    "start": "tsc && node ."
   }
 }
