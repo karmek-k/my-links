@@ -16,8 +16,11 @@
   },
   "devDependencies": {
     "@types/express": "^4.17.13",
+    "@types/morgan": "^1.9.3",
     "@types/node": "^16.4.3",
     "@types/passport": "^1.0.7",
+    "@types/passport-local": "^1.0.34",
+    "morgan": "^1.10.0",
     "nodemon": "^2.0.12",
     "prettier": "^2.3.2",
     "prisma": "2.28.0",
