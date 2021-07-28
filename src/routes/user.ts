@@ -24,15 +24,20 @@ router.get('/:username', async (req, res) => {
 });
 
 router.post('/', async (req, res) => {
-  const user = await prisma.user.create({
-    data: {
-      username: req.body.username,
-      password: await hash(req.body.password)
-    },
-    select: {
-      username: true
-    }
-  });
+  let user;
+  try {
+    user = await prisma.user.create({
+      data: {
+        username: req.body.username,
+        password: await hash(req.body.password)
+      },
+      select: {
+        username: true
+      }
+    });
+  } catch (e) {
+    return res.status(400).json({ msg: 'Could not create the user' });
+  }
 
   return res.status(201).json(user);
 });
