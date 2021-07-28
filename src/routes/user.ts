@@ -8,6 +8,10 @@ router.get('/:username', async (req, res) => {
   const user = await prisma.user.findFirst({
     where: {
       username: req.params.username
+    },
+    select: {
+      username: true,
+      links: true
     }
   });
 
